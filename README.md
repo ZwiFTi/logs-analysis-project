@@ -1,5 +1,5 @@
 
-# **# logs-analysis-project**
+# **logs-analysis-project**
 ### **About this project**
 In this project, we'll work with data that could have come from a real-world web application, with fields representing information that a web server would record, such as HTTP status codes and URL paths. The web server and the reporting tool both connect to the same database, allowing information to flow from the web server into the report.
 
@@ -76,7 +76,7 @@ SELECT a.title,
 | :-------   | :------- |
 | title      | char     |
 | c_articles | integer  |
-|
+
 3. Create view "view_art_auth_cnt" by copy and paste the following code to the command line:
 ```
 CREATE VIEW view_art_auth_cnt AS
@@ -95,7 +95,7 @@ SELECT aut.name,
 | :--------- | :------- |
 | name       | char     |
 | c_articles | integer  |
-|
+
 4. Create view "view_date_err_perc" by copy and paste the following code to the command line:
 ```
 CREATE VIEW view_date_err_perc AS 
@@ -108,7 +108,7 @@ SELECT date(l.time),
 | :------- | :------- |
 | date     | date     |
 | err_perc | float    |
-|
+
 #### Executing the program and get query results:
 1.  Make sure you are in the `/vagrant` working directory of your virtual machine. When you are not sure if you are located in the right folder then type `pwd`. This command will show you your location. The program should be located in this directory. Type the following command to run the program:
 
